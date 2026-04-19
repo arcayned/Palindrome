@@ -1,10 +1,11 @@
 public class Palindrome {
 
-    static boolean isPalindrome(String userImput) {
+    static boolean isPalindrome(String userInput) {
+        userInput = userInput.toLowerCase();
         int i = 0;
-        while (i < userImput.length() / 2) {
-            char first = userImput.charAt(i);
-            char last = userImput.charAt(userImput.length() - i - 1);
+        while (i < userInput.length() / 2) {
+            char first = userInput.charAt(i);
+            char last = userInput.charAt(userInput.length() - i - 1);
             if (first != last) {
                 return false;
             }
