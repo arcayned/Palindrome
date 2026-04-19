@@ -27,7 +27,19 @@ public class PalindromeTest {
     @Test
 public void testRacecarUppercaseIsPalindrome() {
     assertTrue(Palindrome.isPalindrome("Racecar"));
+     }
+
+    @Test
+public void testRacecarWithSpacesIsPalindrome() {
+    assertFalse(Palindrome.isPalindrome("Racecar "));
+    }
+
+    @Test
+public void testRacecarWithMiddleSpaceIsPalindrome() {
+    assertFalse(Palindrome.isPalindrome("Race car"));
+    }
+    
 }
 
 
-}
+
